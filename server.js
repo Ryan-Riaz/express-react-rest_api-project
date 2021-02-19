@@ -15,9 +15,11 @@ app.set("view engine", "ejs");
 
 // import router
 const webRouter = require("./routes");
+const productsRouter = require("./routes/products");
 
 // coming from router
 app.use(webRouter);
+app.use(productsRouter);
 
 // use prefix in routing
 
@@ -33,7 +35,7 @@ app.use(webRouter);
 
 // static file serving
 
-// app.use(express.static("public"));
+app.use(express.static("public"));
 
 //routing
 
