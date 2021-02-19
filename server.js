@@ -52,4 +52,6 @@ app.use(webRouter);
 // });
 
 // 4. start the server
-app.listen(PORT, () => console.log(`Server is listening on ${PORT}`));
+app.listen(PORT, () =>
+    console.log(`Server is listening on http://localhost:${PORT}`)
+);
