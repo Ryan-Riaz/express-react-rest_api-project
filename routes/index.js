@@ -17,18 +17,18 @@ router.get("/about", (req, res) => {
     });
 });
 
-router.get("/api/products", apiKeyMiddleware, (req, res) => {
-    res.json([
-        {
-            id: "123",
-            name: "google",
-        },
-        {
-            id: "123",
-            name: "apple",
-        },
-    ]);
-});
+// router.get("/api/products", apiKeyMiddleware, (req, res) => {
+//     res.json([
+//         {
+//             id: "123",
+//             name: "google",
+//         },
+//         {
+//             id: "123",
+//             name: "apple",
+//         },
+//     ]);
+// });
 
 // export router
 

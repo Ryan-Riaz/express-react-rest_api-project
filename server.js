@@ -17,10 +17,6 @@ app.set("view engine", "ejs");
 const webRouter = require("./routes");
 const productsRouter = require("./routes/products");
 
-// coming from router
-app.use(webRouter);
-app.use(productsRouter);
-
 // use prefix in routing
 
 // app.use("/api", webRouter);
@@ -36,6 +32,13 @@ app.use(productsRouter);
 // static file serving
 
 app.use(express.static("public"));
+
+// for getting json data from client-side
+app.use(express.json());
+
+// coming from router
+app.use(webRouter);
+app.use(productsRouter);
 
 //routing
 
