@@ -8,7 +8,7 @@ function apiKey(req, res, next) {
     console.log(req.query);
     const key = req.query.key;
 
-    if (key && key === "123456") {
+    if (key && key === API_KEY) {
         next();
     } else {
         res.json({ message: "invalid api request" });
